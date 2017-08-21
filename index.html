@@ -1,10 +1,16 @@
 <html>
 <head>
-<script type="text/javascript" src="paper.js"></script>
-<script type="text/paperscript" src="sketch.js" canvas="myCanvas"></script>
+<script type="text/javascript" src="/paper.js"></script>
+<script type="text/paperscript" src="/sketch.js" canvas="myCanvas"></script>
 <style type="text/css">
 
-canvas {
+html,
+body {
+    height: 100%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
     width: 100%;
     height: 100%;
 }
